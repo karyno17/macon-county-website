@@ -10926,7 +10926,9 @@ footer.footer {
   padding-bottom: 4rem;
 }
 
-/* Reduce size of the slideshow */
+/* ==== GLOBAL STANDARDS & TYPOGRAPHY ==== */
+
+/* Slideshow sizing */
 #mainSlideshow {
   max-height: 600px;
   overflow: hidden;
@@ -10941,11 +10943,12 @@ footer.footer {
 /* Remove space above the slideshow */
 .masthead {
   padding-top: 0 !important;
+  padding-bottom: 2rem !important;
   margin-top: 0 !important;
   background-color: #1A2A4F !important;
 }
 
-/* Macon County Typography */
+/* Macon County's Typography */
 body {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 500;
@@ -10987,12 +10990,24 @@ h4 {
   font-size: 14pt;
 }
 
-/* Feature section headings (Homepage cards) */
+/* Home Page feature section headings */
 .features-icons h2 {
   font-size: 20pt;
   margin-top: 0.75rem;
   margin-bottom: 0.5rem;
 }
+
+/* Masthead paragraph spacing */
+.masthead .container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.masthead p {
+  line-height: 1.7;
+}
+
+/* ==== NAVIGATION BAR and BRANDING ==== */
 
 /* Navigation Text */
 .navbar-nav .nav-link {
@@ -11003,15 +11018,13 @@ h4 {
   transition: 0.2s ease;
 }
 
-/* Hover text effect */
 .navbar-nav .nav-link:hover {
   color: #D1A73B;
-  background-color: rgba(26, 42, 79, 0.75);
+  background-color: #24365F;
   border-radius: 6px;
   padding: 4px 8px;
 }
 
-/* Active page indicator */
 .navbar-nav .nav-link.active {
   color: #1A2A4F;
   font-weight: 700;
@@ -11020,7 +11033,7 @@ h4 {
   border-radius: 0;
 }
 
-/* Add spacing between navigation links */
+/* Spacing between navigation links */
 .navbar-nav .nav-item {
   margin-left: 1rem;
 }
@@ -11029,41 +11042,40 @@ h4 {
   margin-left: 0;
 }
 
-/* Mobile Nav Resize */
-@media (max-width: 768px) {
-  .navbar-nav .nav-link {
-    font-size: 15pt;
-  }
-}
-
 .navbar-brand img {
-  height: 150px;
+  height: 170px;
   width: auto;
+  margin-bottom: -4px;
+  display: block;
 }
 
-@media (max-width: 768px) {
-  .navbar-brand img {
-    height: 110px;
-  }
+.navbar-brand {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
 }
 
-.masthead .container {
-  margin-top: 2rem;
+.logo-text {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1A2A4F;
+  margin-top: 0rem;
+  letter-spacing: 0.5px;
 }
 
-/* Carousel navigation arrows */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: brightness(0) invert(1);
-  width: 55px;
-  height: 55px;
+.navbar-toggler {
+  background-color: #DDE3EF !important;
+  border: 2px solid #1A2A4F !important;
+  border-radius: 8px;
+  margin-right: 1.25rem;
+  padding: 0.5rem 0.7rem;
+  transform: scale(1.2);
+  box-shadow: none !important;
 }
 
-/* Gold highlight on hover */
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-  background-color: rgba(209, 167, 59, 0.75);
-}
+/* ==== HERO SECTION BUTTONS ==== */
 
 /* Hero - Top of Page - First Call-to-Action Button */
 .btn-hero-primary {
@@ -11075,7 +11087,6 @@ h4 {
   transition: all 0.2s ease;
 }
 
-/* View Services Button Hover */
 .btn-hero-primary:hover {
   background-color: #1A2A4F;
   color: #D1A73B;
@@ -11111,27 +11122,108 @@ h4 {
   color: #ffffff !important;
 }
 
-/* Adjust focus for campfire showcase image */
+/* ==== HOME PAGE FEATURE SECTIONS ==== */
+
+/* Larger home page icon size */
+.features-icons-icon i {
+  font-size: 6rem !important;
+  color: #1A2A4F !important;
+}
+
+.features-icons-item i {
+  color: #2E584D !important;
+}
+
+.features-icons-item h2 {
+  color: #1A2A4F !important;
+}
+
+.features-icons-item p.lead {
+  color: #1A2A4F !important;
+}
+
+/* Showcase Section Changes */
 .showcase-img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 65%;
 }
 
-/* Macon County Footer */
+.showcase, .showcase .showcase-text, .showcase .showcase-img {
+  background-color: #E6E0D3 !important;
+}
+
+.showcase .showcase-text, .showcase .showcase-text p {
+  color: #1A2A4F !important;
+}
+
+/* Additional Info Bottom Section */
+.additional-info-section {
+  background-color: #2E584D;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.additional-info-section h2, .additional-info-section p {
+  color: #ffffff !important;
+}
+
+.additional-info-section .btn-contact {
+  background-color: #D1A73B;
+  color: #1A2A4F;
+  border: 2px solid #1A2A4F;
+  font-weight: 700;
+  padding: 12px 28px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.additional-info-section .btn-contact:hover {
+  background-color: #0F1C36;
+  color: #D1A73B;
+}
+
+/* ==== FOOTER ==== */
+
 footer.footer {
   background-color: #ffffff!important;
   color: #1A2A4F;
   border-top: 1px solid #DDE3EF;
 }
 
-/* Footer text */
 footer.footer p,
 footer.footer small {
   color: #1A2A4F;
 }
 
-/* Footer links */
+footer .footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+footer .footer-links li {
+  margin-bottom: 1rem;
+}
+
+footer .footer-links li a {
+  color: #1A2A4F;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer .footer-links li a:hover {
+  color: #D1A73B !important;
+}
+
+footer .footer-links li i {
+  color: #1A2A4F;
+  margin-right: 8px;
+  font-size: 0.9rem;
+  vertical-align: middle;
+}
+
 footer.footer a {
   color: #1A2A4F;
   text-decoration: none;
@@ -11143,6 +11235,13 @@ footer.footer a:hover {
   color: #D1A73B;
 }
 
+footer .footer-copyright {
+  text-align: center;
+  margin-top: 1rem;
+  color: #1A2A4F;
+  font-size: 0.9rem;
+}
+
 /* Footer social icons */
 footer.footer i {
   color: #1A2A4F;
@@ -11152,3 +11251,79 @@ footer.footer i {
 footer.footer i:hover {
   color: #D1A73B;
 }
+
+/* ==== CAROUSEL CONTROLS ==== */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: brightness(0) invert(1);
+  width: 55px;
+  height: 55px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(209, 167, 59, 0.75);
+}
+
+/* ==== RESPONSIVE ADJUSTMENTS ==== */
+
+/* Tablet Nav */
+@media (max-width: 992px) {
+  .navbar-nav .nav-link {
+    font-size: 15pt;
+  }
+
+  .navbar-nav .nav-link.active {
+    text-align: center;
+    background-color: #1A2A4F !important;
+    color: #ffffff !important;
+    border-bottom: 3px solid #D1A73B;
+    padding: 8px 12px;
+    border-radius: 6px;
+  }
+
+  .logo-text {
+    font-size: 1rem;
+  }
+
+  .masthead h1 {
+    font-size: 20pt;
+  }
+}
+
+/* Mobile Nav */
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    font-size: 13pt;
+  }
+
+  .navbar-nav .nav-link.active {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link.active {
+    background-color: #1A2A4F !important;
+    color: #ffffff !important;
+    border-bottom: 3px solid #D1A73B;
+    padding: 8px 12px;
+    border-radius: 6px;
+  }
+
+  .navbar-brand img {
+    height: 140px;
+  }
+
+  .logo-text {
+    font-size: 0.95rem;
+    margin-top: -2px;
+  }
+}
+
+/* Extra-small screens */
+@media (max-width: 480px) {
+  .logo-text {
+    font-size: 0.85rem;
+  }
+}
+
