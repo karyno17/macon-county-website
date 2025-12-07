@@ -17,7 +17,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
-
     </head>
     <body>
         <!-- Navigation-->
@@ -39,12 +38,93 @@
 
                 <div class="collapse navbar-collapse" id="menuArea">
                     <ul class="navbar-nav ms-auto">
+                        <!-- Home -->
                         <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About the County</a></li>
-                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="visitors.html">Visitors & Sightseeing</a></li>
-                        <li class="nav-item"><a class="nav-link" href="safety.html">Public Safety</a></li>
-                        <li class="nav-item"><a class="nav-link" href="events.html">Community Events</a></li>
+
+                        <!-- About the County -->
+                        <li class="nav-item dropdown d-flex align-items-center">
+                            
+                        <a class="nav-link" href="about.html">About the County</a>
+                            <a class="nav-link dropdown-toggle dropdown-toggle-split no-caret" 
+                            id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-image:none;"><span class="caret-icon">&#9662;</span>
+                        </a>
+                            
+                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <li><a class="dropdown-item" href="countyoverview.html">County Overview</a></li>
+                                <li><a class="dropdown-item" href="leadership.html">Elected Officials</a></li>
+                                <li><a class="dropdown-item" href="history.html">County History</a></li>
+                                <li><a class="dropdown-item" href="mission.html">Our Mission & Vision</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Services -->
+                        <li class="nav-item dropdown d-flex align-items-center">
+                            
+                        <a class="nav-link" href="services.html">Services</a>
+                            <a class="nav-link dropdown-toggle dropdown-toggle-split no-caret" 
+                            id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-image:none;"><span class="caret-icon">&#9662;</span>
+                        </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                <li><a class="dropdown-item" href="#">Resident Services</a></li>
+                                <li><a class="dropdown-item" href="#">Business Services</a></li>
+                                <li><a class="dropdown-item" href="#">Public Records</a></li>
+                                <li><a class="dropdown-item" href="#">Recreation Programs</a></li>
+                                 <li><a class="dropdown-item" href="#">Community Centers</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Visitors -->
+                        <li class="nav-item dropdown d-flex align-items-center">
+                            
+                        <a class="nav-link" href="sightseeing.html">Sightseeing</a>
+                            <a class="nav-link dropdown-toggle dropdown-toggle-split no-caret" 
+                            id="sightseeingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-image:none;"><span class="caret-icon">&#9662;</span>
+                        </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="sightseeingDropdown">
+                                <li><a class="dropdown-item" href="#">Visitor Resources</a></li>
+                                <li><a class="dropdown-item" href="#">Parks & Scenic Areas</a></li>
+                                <li><a class="dropdown-item" href="#">Popular Trails</a></li>
+                                <li><a class="dropdown-item" href="#">County Landmarks</a></li>
+                                 <li><a class="dropdown-item" href="#">Local Business Directory</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Public Safety -->
+                          <li class="nav-item dropdown d-flex align-items-center">
+                            
+                        <a class="nav-link" href="safety.html">Public Safety</a>
+                            <a class="nav-link dropdown-toggle dropdown-toggle-split no-caret" 
+                            id="safetyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-image:none;"><span class="caret-icon">&#9662;</span>
+                        </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="safetyDropdown">
+                                <li><a class="dropdown-item" href="#">County News</a></li>
+                                <li><a class="dropdown-item" href="#">Sheriff's Office</a></li>
+                                <li><a class="dropdown-item" href="#">Fire & Rescue</a></li>
+                                <li><a class="dropdown-item" href="#">EMS Services</a></li>
+                                 <li><a class="dropdown-item" href="#">Emergency Management</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Community Events -->
+                          <li class="nav-item dropdown d-flex align-items-center">
+                            
+                        <a class="nav-link" href="events.html">Community Events</a>
+                            <a class="nav-link dropdown-toggle dropdown-toggle-split no-caret" 
+                            id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-image:none;"><span class="caret-icon">&#9662;</span>
+                        </a>
+                            <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                                <li><a class="dropdown-item" href="#">Event Calendar</a></li>
+                                <li><a class="dropdown-item" href="#">Festivals & Celebrations</a></li>
+                                <li><a class="dropdown-item" href="#">Farmers Markets</a></li>
+                                <li><a class="dropdown-item" href="#">Library Programs</a></li>
+                                 <li><a class="dropdown-item" href="#">Local Business Directory</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Contact -->
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
@@ -166,37 +246,111 @@
         </section>
 
         <!-- Footer-->
-        <footer class="footer bg-light">
+        <footer class="footer">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+                <!-- Wrapper that controls the spacing between columns and icons -->
+                <div class="footer-columns-wrapper">
+                <div class="row justify-content-center">
+                    
+                    <!-- 1st Left Column of Links -->
+                    <div class="col-lg-4 footer-column">
                         <ul class="footer-links">
-                            <li><i class="bi bi-bookmark"></i><a href="about.html">About the County</a></li>
-                            <li><i class="bi bi-bank"></i><a href="services.html">Services</a></li>
-                            <li><i class="bi bi-image-alt"></i><a href="visitors.html">Visitors & Sightseeing</a></li>
-                            <li><i class="bi bi-shield-check"></i><a href="safety.html">Public Safety</a></li>
-                            <li><i class="bi bi-calendar-event"></i><a href="events.html">Community Events</a></li>
-                            <li><i class="bi bi-envelope"></i><a href="contact.html">Contact Us</a></li>
+                            <li>
+                                <div class="footer-link-header"><i class="bi bi-bookmark"></i><a href="about.html">About the County</a></div>
+                                <ul class="footer-sublinks">
+                                    <li><a href="#">County Overview</a></li>
+                                    <li><a href="#">Elected Officials</a></li>
+                                    <li><a href="#">County History</a></li>
+                                    <li><a href="#">Our Mission & Vision</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="footer-links">
+                            <li>
+                                <div class="footer-link-header">
+                                <i class="bi bi-bank"></i><a href="services.html">Services</a></div>
+                                <ul class="footer-sublinks">
+                                    <li><a href="#">Resident Services</a></li>
+                                    <li><a href="#">Business Services</a></li>
+                                    <li><a href="#">Public Records</a></li>
+                                    <li><a href="#">Recreation Programs</a></li>
+                                    <li><a href="#">Community Centers</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
+                <!-- 2st Middle Column of Links -->
+                <div class="col-lg-4 footer-column">
+                        <ul class="footer-links">
+                            <li>
+                                <div class="footer-link-header">
+                                <i class="bi bi-image-alt"></i><a href="visitors.html">Sightseeing</a></div>
+                                <ul class="footer-sublinks">
+                                    <li><a href="#">Visitor Resources</a></li>
+                                    <li><a href="#">Parks & Scenic Areas</a></li>
+                                    <li><a href="#">Popular Trails</a></li>
+                                    <li><a href="#">County Landmarks</a></li>
+                                    <li><a href="#">Local Business Directory</a></li>
+                                </ul>
+                            </li>
+                        </ul>
 
-                    <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
-                        <ul class="list-inline mb-0">
-                            <li class="list-inline-item me-4">
-                                <a href="#!"><i class="bi-facebook fs-3"></i></a>
-                            </li>
-                            <li class="list-inline-item me-4">
-                                <a href="#!"><i class="bi-twitter fs-3"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#!"><i class="bi-instagram fs-3"></i></a>
+                        <ul class="footer-links">
+                            <li>
+                                <div class="footer-link-header">
+                                <i class="bi bi-shield-check"></i><a href="safety.html">Public Safety</a></div>
+                                <ul class="footer-sublinks">
+                                    <li><a href="#">County News</a></li>
+                                    <li><a href="#">Sheriff's Office</a></li>
+                                    <li><a href="#">Fire & Rescue</a></li>
+                                    <li><a href="#">EMS Services</a></li>
+                                    <li><a href="#">Emergency Management</a></li>
+                                </ul>
                             </li>
                         </ul>
-                    </div>
+                </div>
+                <!-- 3rd Right Column of Links-->
+                <div class="col-lg-4 footer-column">
+                    <ul class="footer-links">   
+                        <li>
+                            <div class="footer-link-header">
+                            <i class="bi bi-calendar-event"></i><a href="events.html">Community Events</a></div>
+                            <ul class="footer-sublinks">
+                                    <li><a href="#">Event Calendar</a></li>
+                                    <li><a href="#">Festivals & Celebrations</a></li>
+                                    <li><a href="#">Farmers Markets</a></li>
+                                    <li><a href="#">Library Programs</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="footer-links">
+                        <li>
+                            <div class="footer-link-header">
+                            <i class="bi bi-envelope"></i><a href="contact.html">Contact Us</a></div>
+                            <ul class="footer-sublinks">
+                                <li>We're here to help!</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="row mt-3">
-                    <div class="col text-center">
+                    <div class="footer-social">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item me-4">
+                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i class="bi-facebook fs-1"></i></a>
+                                </li>
+                                <li class="list-inline-item me-4">
+                                    <a href="https://www.x.com" target="_blank" rel="noopener"><i class="bi-twitter-x fs-1"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://www.instagram.com" target="_blank" rel="noopener"><i class="bi-instagram fs-1"></i></a>
+                                </li>
+                            </ul>
+                    </div>
+            
+                
+              
+                    <div class="footer-copyright">
                         <p class="footer-copyright">&copy; Macon County, North Carolina 2025. All Rights Reserved.</p>
                     </div>
                 </div>
@@ -210,5 +364,6 @@
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        </script>
     </body>
 </html>
