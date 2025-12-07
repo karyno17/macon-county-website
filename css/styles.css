@@ -10945,7 +10945,7 @@ header.masthead h1, header.masthead .h1 {
 
 /* Macon County's Typography */
 body {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-weight: 500;
   font-size: 13pt;
   line-height: 1.15;
@@ -10959,7 +10959,7 @@ h1, h2 {
 }
 
 h3 {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-weight: 700;
 }
 
@@ -10992,6 +10992,10 @@ h4 {
   margin-bottom: 0.5rem;
 }
 
+.home-intro-text {
+  text-align: left !important;
+}
+
 /* Masthead paragraph spacing */
 .masthead .container {
   margin-top: 2rem;
@@ -11006,18 +11010,26 @@ h4 {
 
 /* Navigation Text */
 .navbar-nav .nav-link {
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 700;
-  font-size: 16pt;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
   color: #1A2A4F;
   transition: 0.2s ease;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .navbar-nav .nav-link:hover {
   color: #D1A73B;
   background-color: #24365F;
   border-radius: 6px;
-  padding: 4px 8px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .navbar-nav .nav-link.active {
@@ -11051,12 +11063,13 @@ h4 {
 }
 
 .logo-text {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 800;
   color: #1A2A4F;
   margin-top: 0rem;
   letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .navbar-toggler {
@@ -11073,22 +11086,22 @@ h4 {
   display: none !important;
 }
 
-.navbar .dropdown-menu {
-  background-color: #E6E0D3;
-  border: none;
-  border-radius: 6px;
-  padding: 0.5rem 0;
-}
-
 .navbar .dropdown-item {
   color:  #1A2A4F;
-  font-size: 0.95rem;
+  font-size: 1.15rem;
+  font-weight: 500;
   padding: 0.55rem 1.25rem;
 }
 
 .navbar .dropdown-menu {
   box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
-  min-width: 100%;
+  min-width: max-content !important;
+  white-space: nowrap !important;
+  background-color: #E6E0D3;
+  border: none;
+  letter-spacing: 0.5px;
+  border-radius: 6px;
+  padding: 0.5rem 0;
 }
 
 .navbar-na .dropdown-toggle-split {
@@ -11104,7 +11117,7 @@ h4 {
 .caret-icon {
   position: relative;
   top: -2px;
-  margin-left: -8px;
+  margin-left: -4px;
   font-size: 1.1rem;
   padding: 0 !important;
 }
@@ -11165,11 +11178,22 @@ h4 {
 }
 
 .features-icons-item i {
-  color: #2E584D !important;
+  color: #1A2A4F !important;
 }
 
 .features-icons-item h2 {
   color: #1A2A4F !important;
+}
+
+.features-icons h2 a {
+  color: #1A2A4F;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.features-icons h2 a:hover {
+  text-decoration: underline;
+  text-decoration-color: #D1A73B;
 }
 
 .features-icons-item p.lead {
@@ -11218,7 +11242,6 @@ h4 {
 }
 
 /* ==== FOOTER ==== */
-
 .footer-column {
   padding-top: 2rem !important;
   padding-left: 1.5rem;
@@ -11227,10 +11250,11 @@ h4 {
 }
 
 footer.footer {
-  background-color: #ffffff !important;
+  background-color: #F8F9FA !important;
   color: #1A2A4F;
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
+  letter-spacing: 0.5px;
 }
 
 .footer-links > li {
@@ -11240,16 +11264,17 @@ footer.footer {
 .footer-link-header a:hover {
   background-color: #D1A73B !important;
   color: #1A2A4F !important;
-  font-weight: 800;
+  font-weight: 700;
   text-decoration: none;
   border-radius: 4px;
-  padding: 2px 6px;
+  padding: 5px 9px;
 }
 
 .footer-link-header a {
   color: #1A2A4F;
   text-decoration: none;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .footer-links > li .bi {
@@ -11355,22 +11380,26 @@ footer.footer {
 
 /* ==== CONTACT US PAGE ==== */
 .contact-banner {
-  display: block;
-  margin-top: 0;
   background-image: url("../assets/img/countycontactrep.jpg");
   background-size: cover;
-  background-position: center 50%;
+  background-position: center;
   background-repeat: no-repeat;
   height: 360px;
   width: 100%;
-  display: flex;
-  justify-content: center;
+}
+
+.contact-header-bar {
+  background-color: #D1A73B;
+}
+
+.contact-header-bar h1{
+  color: #1A2A4F;
+  font-weight: 700;
+  font-size: 2rem !important;
+  margin: 0;
 }
 
 /* Contact Page Header */
-.contact-header {
-  background-color: #DDE3EF;
-}
 
 .contact-header h1{
   color: #1A2A4F;
@@ -11382,28 +11411,39 @@ footer.footer {
   font-size: 1.2rem;
   color: #1A2A4F;
   max-width: 780px;
-  margin: 0 auto;
+  margin: 1.5rem auto 0 auto;
   background-color: #ffffff;
   line-height: 1.6;
   padding: 0 1rem;
+  text-align: left !important;
 }
 
 .county-info h2 {
   color: #1A2A4F;
   font-weight: 700;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "League Spartan", sans-serif;
 }
 
 .county-info p {
   color: #1A2A4F;
+  line-height: 1.6;
+}
+
+.office-info-box {
+  background-color: rgba(209, 167, 59, 0.55);
+  padding: 1.5rem .7rem;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto 2rem auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
 }
 
 /* Contact Form */
 .contact-title {
   color: #2E584D !important;
   font-weight: 700;
-  font-size: 1.4rem;
-  font-family: "Nunito Sans", sans-serif !important;
+  font-size: 1.75rem;
+  font-family: "Inria Serif", serif;
 }
 
 .contact-form-box {
@@ -11413,6 +11453,10 @@ footer.footer {
   color: #1A2A4F;
   position: relative;
   z-index: 10;
+  padding-top: 2rem !important;
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
 }
 
 .contact-form-box .form-label {
@@ -11435,6 +11479,7 @@ footer.footer {
   overflow: visible !important;
   position: static !important;
 }
+
 .contact-form-box .form-select option {
   color: #1A2A4F;
 }
@@ -11443,7 +11488,7 @@ footer.footer {
   background-color: #1A2A4F !important;
   color: #ffffff;
   border: 1px solid #1A2A4F !important;
-  font-family:'Nunito Sans', sans-serif !important;
+  font-family: "League Spartan", sans-serif !important;
   padding: 0.5rem;
   font-size: 1rem;
 }
@@ -11457,8 +11502,12 @@ footer.footer {
 .btn-contact-submit {
   background-color: #2E584D;
   color: #ffffff;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 1.15rem;
   border-radius: 6px;
+  letter-spacing: 2px;
+  margin-top: 1rem;
+  margin-bottom: .85rem;
   border: none;
   transition: background-color 0.2s ease, transform 0.1s ease;
 }
@@ -11476,9 +11525,9 @@ footer.footer {
 
 .contact-map-title {
   color: #1A2A4F;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 2rem;
 }
 
 .map-container {
@@ -11490,11 +11539,216 @@ footer.footer {
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
+/* ==== ABOUT THE COUNTY PAGE ==== */
+/* Background Color */
+.about-page {
+  background-color: #f8F9FA;
+}
+
+/* Banner Image */
+.page-hero-wrapper {
+  background-color: #F8F9FA;
+  padding: 1rem 0 0 0;
+  padding-bottom: 2rem;
+}
+
+.page-hero-frame {
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 8px solid #D1A73B;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+}
+
+.page-header {
+  background-color: #D1A73B;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.about-header-bar {
+  background-color: #D1A73B;
+}
+
+.about-banner {
+  background-image: url("../assets/img/business_leaders_smiling.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 360px;
+}
+
+.about-header h1 {
+  color: #1A2A4F;
+  font-weight: 700;
+  font-size: 2rem !important;
+  margin: 0;
+}
+
+.about-header-text, .contact-header-text {
+  background-color: transparent;
+}
+/* Testimonials Section */
+.about-testimonials {
+  background-color: #DDE3EF;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-testimonial-title {
+  color: #1A2A4F;
+  font-family: "Inria Serif", serif;
+  font-weight: 600;
+  font-size: 1.88rem;
+  margin-bottom: 2.5rem;
+}
+
+.about-testimonials .testimonial-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 4px solid #D1A73B;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.about-testimonials h5 {
+  color: #1A2A4F;
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.about-testimonials p {
+  font-family: "League Spartan", sans-serif;
+  font-size: 0.95rem;
+  color: #1A2A4F;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.25rem;
+}
+
+/* About Page Subnav Buttons */
+.about-subnav {
+  background-color: #2E584D;
+}
+
+.about-subnav-title {
+  color: #DCE7D6;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+}
+
+.about-subnav-btn {
+  display: inline-block;
+  background-color: #DCE7D6;
+  color: #1A2A4F;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 2px solid #ffffff;
+  transition: all 0.25s ease;
+}
+
+.about-subnav-btn:hover {
+  background-color: #D1A73B;
+  border-color: #D1A73B;
+  color: #1A2A4F;
+}
+
+/* ==== SERVICES PAGE ==== */
+.services-page {
+  background-color: #F8F9FA;
+}
+
+.services-hero-frame {
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+  border: 8px solid #A8B6CF;
+}
+
+.services-banner {
+  background-image: url("../assets/img/services_people_holding_hands2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 360px;
+}
+
+.services-hero-wrapper {
+  background-color: #f8F9FA;
+  padding: 1rem 0 0 0;
+}
+
+.services-header-bar {
+  background-color: #2E584D;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.services-header-bar h1{
+  color: #DDE3EF;
+  font-weight: 700;
+  font-size: 2rem !important;
+  margin: 0;
+}
+
+.services-header-text {
+  background-color: transparent !important;
+}
+
+/* Showcase Area */
+.services-showcase .services-box {
+  background-color: #A8B6CF;
+  color: #1A2A4F !important;
+  padding: 3rem;
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.services-showcase h2 {
+  font-family: "Inria Serif", serif;
+  font-weight: 800;
+  color: #1A2A4F;
+  margin-bottom: 1rem;
+}
+
+.services-showcase p {
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #1A2A4F !important;
+  line-height: 1.6;
+}
+
+.services-showcas .showcase-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 360px;
+}
+
+
 /* ==== RESPONSIVE ADJUSTMENTS ==== */
 /* Desktop View */
 @media (min-width: 1123px) {
   .navbar-nav .nav-link {
-    font-size: 1rem;
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
     padding: 0.5rem 0.75rem;
   }
   
@@ -11502,9 +11756,11 @@ footer.footer {
     background-color: transparent !important;
     color: #1A2A4F;
     border-bottom: 3px solid #D1A73B;
+    width: auto;
   }
+
   .footer-links > li {
-    margin-bottom: 4rem !important;
+    margin-bottom: 1.5rem !important;
   }
 
   .footer .row:first-of-type {
@@ -11512,10 +11768,42 @@ footer.footer {
   }
 }
 
-/* Tablet Nav */
-@media (min-width: 768px) and (max-width: 1123px) {
+/* Breaking Point for Caret Issues in Top Nav */
+@media (min-width: 992px) and (max-width: 1048px) {
   .navbar-nav .nav-link {
-    font-size: 0.95rem;;
+    font-size: 0.9rem !important;
+  }
+}
+
+/* Tablet View */
+@media (min-width: 768px) and (max-width: 1123px) {
+
+  .navbar-nav .nav-link {
+    font-size: 0.95rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .navbar-nav .nav-link.active {
+    border-bottom: 3px solid #D1A73B;
+    text-align: left; 
+    width: fit-content;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* Caret spacing for tablet */
+  .navbar-nav .caret-icon {
+    margin-left: 6px;
+  }
+
+  .navbar .dropdown-menu {
+    position: static;
+    float: none !important;
+    width: 100%;
+    margin-top: 0.5rem !important;
+    box-shadow: none !important;
+    min-width: max-content !important;
+    white-space: nowrap !important;
   }
 
   .navbar-brand img {
@@ -11527,10 +11815,14 @@ footer.footer {
   }
 }
 
-/* Mobile Nav */
+/* Mobile View */
 @media (max-width: 767px) {
-    .navbar-nav .nav-link {
+  .navbar-nav .nav-link {
         font-size: 13pt;
+        padding: 0.75rem 0;
+        display: flex;
+        align-items: center;
+        width: 100%
     }
 
     .navbar-nav .nav-link.active {
@@ -11540,6 +11832,7 @@ footer.footer {
     border-bottom: 3px solid #D1A73B;
     padding: 8px 12px;
     border-radius: 6px;
+    justify-content: center;
   }
 
   .navbar-brand img {
@@ -11553,39 +11846,33 @@ footer.footer {
   /* Nav and Caret line up nicely */
   .navbar-nav .nav-item.dropdown {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
   }
 
   .navbar-nav .dropdown-toggle-split {
-    margin-left: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-left: 8px !important;
+    border-radius: 6px !important;
+    padding: 4px 6px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .navbar-nav .caret-icon {
-    display: inline-block;
-    transform: rotate(-90deg);
     transition: transform 0.25s ease;
-    font-size: 1rem;
-  }
-
-    .navbar-nav .show .caret-icon {
-    transform: rotate(0deg);
+    font-size: 1.3rem !important;
+    margin: 0;
+    color: #1A2A4F;
+    transition: transform 0.25s ease;
   }
 
   .navbar-nav .nav-item.dropdown.show .dropdown-toggle-split {
-    margin-left: 15px !important;
+    margin-left: 8px !important;
   }
-  
-  .navbar-nav .nav-link.active {
-    background-color: #1A2A4F !important;
-    color: #ffffff !important;
-    border-bottom: 3px solid #D1A73B;
-    padding: 8px 12px;
-    border-radius: 6px;
-    text-align: center;
+
+  .navbar-nav .dropdown-toggle-split:hover {
+    background-color: #DDE3EF;
   }
 
   .masthead h1 {
@@ -11596,9 +11883,9 @@ footer.footer {
     margin-bottom: .5rem;
   }
 
-.footer-links > li {
+  .footer-links > li {
   margin-bottom: 2rem !important;
-}
+  }
 
   .logo-text {
     font-size: 0.95rem;
@@ -11606,7 +11893,7 @@ footer.footer {
   }
 
   .footer-links > li {
-    margin-bottom: 1.5rem !important;
+    margin-bottom: 1.25rem !important;
   }
 
   .footer .row {

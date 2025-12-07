@@ -16,9 +16,9 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">  
     </head>
-    <body>
+    <body class="about-page">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
             <div class="container-fluid">
@@ -39,7 +39,7 @@
                 <div class="collapse navbar-collapse" id="menuArea">
                     <ul class="navbar-nav ms-auto">
                         <!-- Home -->
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item d-flex align-items-center"><a class="nav-link" href="index.html">Home</a></li>
 
                         <!-- About the County -->
                         <li class="nav-item dropdown d-flex align-items-center">
@@ -69,7 +69,7 @@
                                 <li><a class="dropdown-item" href="#">Resident Services</a></li>
                                 <li><a class="dropdown-item" href="#">Business Services</a></li>
                                 <li><a class="dropdown-item" href="#">Public Records</a></li>
-                                <li><a class="dropdown-item" href="#">Recreation Programs</a></li>
+                                <li><a class="dropdown-item" href="#">Recreational Programs</a></li>
                                  <li><a class="dropdown-item" href="#">Community Centers</a></li>
                             </ul>
                         </li>
@@ -132,8 +132,13 @@
         </nav>
 
         <!-- About Page Hero Area -->
-        <header class="about-banner"></header>
-        <section class="about-header text-center py-4">
+        <section class="page-hero-wrapper">
+            <div class="page-hero-frame">
+                <div class="about-banner"></div>
+            </div>
+        </section>
+
+        <section class="page-header about-header-bar text-center py-4">
             <div class="container">
                 <h1>About Macon County</h1>
             </div>
@@ -141,81 +146,56 @@
 
         <section class="contact-header-text text-center py-4">
             <div class="container">
-                <p class="lead">We're ready to support, advise, and provide resourceful information to our residents, businesses, and visitors of Macon County, NC. You are welcome to send us a message below. We respond to messages within 24-business hours. You can call our office directly, as well.</p>
-            </div>
-        </section>
+                <p class="lead">Founded in 1828, Macon County, NC has grown into a strong and resilient mountain community guided by dedicated local leadership. Governed by a Board of Commissioners and supported by a range of county departments, Macon County works to provide essential services, promote public safety, and support the well-being of its residents. Through collaborative leadership and engaged citizens, the county continues to honor its heritage while supporting thoughtful, long-term growth.</p>
 
-        <!-- County Location & Hours -->
-        <section class="county-info text-center py-4">
-            <div class="container">
-                <h2 class="mb-3">Macon County Administrative Office</h2>
-                <p class="lead mb-1"><strong>Address:</strong> 177 Fairfield Drive, Franklin, NC 28734</p>
-                <p class="lead mb-1"><strong>Hours of Operation:</strong> Monday-Friday, 9AM - 5PM</p>
-                <p class="lead mb-1"><strong>Phone:</strong> (828) 735-7143</p>
-            </div>
-        </section>
+                <p class="lead">Macon County takes pride in fostering a welcoming enviornment where residents, businesses, and visitors feel supported. County departments collaborate daily to streamline services, expand community programs, and enhance access to local resources. From maintaining vitual infrustructure to strengthening emergency readiness, Macon County remains committed to ensuring that every community member has the opportunity to thrive.</p>
 
-        <!-- Contact Form Section -->
-        <section class="container-form-section py-5">
-            <div class="container">
-                <h2 class="text-center mb-4 contact-title">Message Portal</h2>
-                <div class="contact-form-box p-4 mx-auto">
-
-                <form>
-                    <!--Department Dropdown-->
-                    <div class="mb-3">
-                        <label for="department" class="form-label">Which of the following areas are you seeking assistance in?</label>
-                        <select class="form-select" id="department">
-                            <option>General Inquiries</option>
-                            <option>Utility Billing</option>
-                            <option>Public Records</option>
-                            <option>Permit & Licensing Requests</option>
-                        </select>
-                    </div>
-                    <!-- Name -->
-                     <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label class="form-label">First Name</label>
-                            <input type="text" class="form-control">
-                        </div>
-                     </div>
-                     <!-- Email -->
-                    <div class="mb-3">
-                        <label class="form-label">Email Address</label>
-                        <input type="email" class="form-control">
-                    </div>
-                    <!-- Phone -->
-                    <div class="mb-3">
-                        <label class="form-label">Phone Number (optional)</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <!-- Message -->
-                    <div class="mb-3">
-                        <label class="form-label">Enter Your Message Here</label>
-                        <textarea class="form-control" rows="5"></textarea>
-                    </div>
-                    <!-- Submit -->
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-contact-submit px-4 py-2">Submit</button>
-                    </div>
-
-                </form>
-            </div>
             </div>
         </section>
         
-        <!-- County Map -->
-        <section class="contact-map-section py-5">
-            <div class="container text-center">
-                <h2 class="contact-map-title mb-4">Find Our Office on the Map</h2>
-            </div>
-            <!-- Google Maps -->
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208753.81751012412!2d-83.423263!3d35.162147000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8859329b9fc6c1d5%3A0xea751cd53417d095!2sMacon%20County%2C%20NC!5e0!3m2!1sen!2sus!4v1765083296646!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+        <!-- Testimonials Section -->
+        <section class="about-testimonials text-center py-5">
+            <div class="container">
+                <h2 class="about-testimonial-title mb-5">Voices Around Macon County</h2>
+
+                <div class="row">
+                    <!-- Person 1 -->
+                     <div class="col-lg-4 mb-5">
+                        <img class="testimonial-img mb-3 light-photo" src="assets/img/testimonial-1-woman.jpg" alt="Testimonial from female named Margaret">
+                        <h5 class="fw-bold">Margaret E.</h5>
+                        <p class="fst-italic">"Macon County has alway been welcoming and supportive. I appreciate the transparency the county offers and the community outreach!"</p>
+                     </div>
+
+                     <!-- Person 2 -->
+                     <div class="col-lg-4 mb-5">
+                        <img class="testimonial-img mb-3" src="assets/img/testimonial-2-man.jpg" alt="Testimonial from male named Robert">
+                        <h5 class="fw-bold">Robert S.</h5>
+                        <p class="fst-italic">"County services have been incredibly easy to navigate compared to other areas I've lived in the past. I really appreciate how straightforward the services are here."</p>
+                     </div>
+
+                     <!-- Person 3 -->
+                     <div class="col-lg-4 mb-5">
+                        <img class="testimonial-img mb-3" src="assets/img/testimonial-3-older.jpg" alt="Testimonial from female named Sarah">
+                        <h5 class="fw-bold">Sarah W.</h5>
+                        <p class="fst-italic">"We love living here! The variety of community programs, events, and resources offered by the county are just amazing. I couldn't be more grateful especially to the Macon County Emergency Management team after their continual timely assistance."</p>
+                     </div>
+                </div>
             </div>
         </section>
 
+        <!-- About Subpage Navigation -->
+         <section class="about-subnav py-5 text-center">
+            <div class="container">
+                <h2 class="about-subnav-title mb-4">Explore More About Macon County</h2>
+
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="countyoverview.html" class="about-subnav-btn">County Overview</a>
+                    <a href="leadership.html" class="about-subnav-btn">Elected Officials</a>
+                    <a href="history.html" class="about-subnav-btn">County History</a>
+                    <a href="mission.html" class="about-subnav-btn">Our Mission & Vision</a>
+                </div>
+            </div>
+         </section>
         <!-- Footer-->
         <footer class="footer">
             <div class="container">
@@ -244,7 +224,7 @@
                                     <li><a href="#">Resident Services</a></li>
                                     <li><a href="#">Business Services</a></li>
                                     <li><a href="#">Public Records</a></li>
-                                    <li><a href="#">Recreation Programs</a></li>
+                                    <li><a href="#">Recreational Programs</a></li>
                                     <li><a href="#">Community Centers</a></li>
                                 </ul>
                             </li>

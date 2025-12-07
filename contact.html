@@ -16,7 +16,7 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
     </head>
     <body>
         <!-- Navigation-->
@@ -39,8 +39,8 @@
                 <div class="collapse navbar-collapse" id="menuArea">
                     <ul class="navbar-nav ms-auto">
                         <!-- Home -->
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-
+                        <li class="nav-item d-flex align-items-center"><a class="nav-link" href="index.html">Home</a></li>
+                        
                         <!-- About the County -->
                         <li class="nav-item dropdown d-flex align-items-center">
                             
@@ -69,7 +69,7 @@
                                 <li><a class="dropdown-item" href="#">Resident Services</a></li>
                                 <li><a class="dropdown-item" href="#">Business Services</a></li>
                                 <li><a class="dropdown-item" href="#">Public Records</a></li>
-                                <li><a class="dropdown-item" href="#">Recreation Programs</a></li>
+                                <li><a class="dropdown-item" href="#">Recreational Programs</a></li>
                                  <li><a class="dropdown-item" href="#">Community Centers</a></li>
                             </ul>
                         </li>
@@ -132,8 +132,13 @@
         </nav>
 
         <!-- Contact Page Hero Area -->
-        <header class="contact-banner"></header>
-        <section class="contact-header text-center py-4">
+        <section class="page-hero-wrapper">
+            <div class="page-hero-frame">
+                <div class="contact-banner"></div>
+            </div>
+        </section>
+
+        <section class="page-header contact-header-bar text-center py-4">
             <div class="container">
                 <h1>Contact Macon County</h1>
             </div>
@@ -148,17 +153,19 @@
         <!-- County Location & Hours -->
         <section class="county-info text-center py-4">
             <div class="container">
-                <h2 class="mb-3">Macon County Administrative Office</h2>
-                <p class="lead mb-1"><strong>Address:</strong> 177 Fairfield Drive, Franklin, NC 28734</p>
-                <p class="lead mb-1"><strong>Hours of Operation:</strong> Monday-Friday, 9AM - 5PM</p>
-                <p class="lead mb-1"><strong>Phone:</strong> (828) 735-7143</p>
+                <div class="office-info-box">
+                    <h2 class="mb-3">Macon County Administrative Office</h2>
+                    <p class="lead mb-1"><strong>Address:</strong> 177 Fairfield Drive, Franklin, NC 28734</p>
+                    <p class="lead mb-1"><strong>Hours of Operation:</strong> Monday-Friday, 9AM - 5PM</p>
+                    <p class="lead mb-1"><strong>Phone:</strong> (828) 735-7143</p>
+                </div>
             </div>
         </section>
 
         <!-- Contact Form Section -->
         <section class="container-form-section py-5">
             <div class="container">
-                <h2 class="text-center mb-4 contact-title">Message Portal</h2>
+                <h2 class="text-center mb-4 contact-title">Online Message Center</h2>
                 <div class="contact-form-box p-4 mx-auto">
 
                 <form>
@@ -196,7 +203,7 @@
                     </div>
                     <!-- Submit -->
                     <div class="text-center">
-                        <button type="submit" class="btn btn-contact-submit px-4 py-2">Submit</button>
+                        <button type="submit" class="btn btn-contact-submit px-4 py-2">SUBMIT</button>
                     </div>
 
                 </form>
@@ -207,7 +214,7 @@
         <!-- County Map -->
         <section class="contact-map-section py-5">
             <div class="container text-center">
-                <h2 class="contact-map-title mb-4">Find Our Office on the Map</h2>
+                <h2 class="contact-map-title mb-4">Directions to Our Office</h2>
             </div>
             <!-- Google Maps -->
             <div class="map-container">
@@ -244,7 +251,7 @@
                                     <li><a href="#">Resident Services</a></li>
                                     <li><a href="#">Business Services</a></li>
                                     <li><a href="#">Public Records</a></li>
-                                    <li><a href="#">Recreation Programs</a></li>
+                                    <li><a href="#">Recreational Programs</a></li>
                                     <li><a href="#">Community Centers</a></li>
                                 </ul>
                             </li>
