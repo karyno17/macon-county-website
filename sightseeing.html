@@ -3,9 +3,11 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
+        <meta name="description" content="Discover the scenic mountains views, outdoor recreation, community services, and resources for residents and visitors in Macon County, NC. Explore what makes our mountain towns welcoming, vibrant, and full of natural beauty." />
         <meta name="author" content="" />
-        <title>Welcome to Macon County, NC</title>
+        <title>Macon County, NC | Sightseeing, Attractions & Scenic Outdoor Destinations</title>
+         <!-- Canonical Link -->
+         <link rel="canonical" href="https://karyno17.github.io/macon-county-website/sightseeing.html">
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -16,7 +18,10 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">  
+         <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=League+Spartan:wght@100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+        </noscript>
     </head>
     <body class="services-page">
         <!-- Navigation-->
@@ -60,7 +65,7 @@
                         <!-- Services -->
                         <li class="nav-item dropdown d-flex align-items-center">
                             
-                        <a class="nav-link active" href="services.html">Services</a>
+                        <a class="nav-link" href="services.html">Services</a>
                             <a class="nav-link dropdown-toggle dropdown-toggle-split no-caret" 
                             id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-image:none;"><span class="caret-icon">&#9662;</span>
                         </a>
@@ -77,7 +82,7 @@
                         <!-- Visitors -->
                         <li class="nav-item dropdown d-flex align-items-center">
                             
-                        <a class="nav-link" href="sightseeing.html">Sightseeing</a>
+                        <a class="nav-link active" href="sightseeing.html">Sightseeing</a>
                             <a class="nav-link dropdown-toggle dropdown-toggle-split no-caret" 
                             id="sightseeingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-image:none;"><span class="caret-icon">&#9662;</span>
                         </a>
@@ -120,7 +125,6 @@
                                 <li><a class="dropdown-item" href="subpage/festivals.html">Festivals & Celebrations</a></li>
                                 <li><a class="dropdown-item" href="subpage/markets.html">Farmers Markets</a></li>
                                 <li><a class="dropdown-item" href="subpage/library.html">Library Programs</a></li>
-                                 <li><a class="dropdown-item" href="subpage/business-directory.html">Local Business Directory</a></li>
                             </ul>
                         </li>
 
@@ -131,73 +135,88 @@
             </div>
         </nav>
 
-        <!-- Services Page Hero Area -->
+        <!-- Sightseeing Page Hero Area -->
          <section class="page-hero-wrapper">
-            <div class="services-hero-frame">
-                <div class="services-banner"></div>
+            <h2 class="visually-hidden">Page Hero Section</h2>
+            <div class="sightseeing-hero-frame">
+                <div class="sightseeing-banner"></div>
             </div>
         </section>
 
-        <!-- Services Page Top Image -->
-        <section class="page-header services-header-bar text-center py-4">
+        <!-- Sightseeing Page Top Image -->
+        <section class="page-header sightseeing-header-bar text-center py-4">
+            <h2 class="visually-hidden">Contact Page Intro</h2>
             <div class="container">
-                <h1>County Services</h1>
+                <h1>Sightseeing & Visitor Resources</h1>
             </div>
         </section>
 
         <section class="contact-header-text text-center py-4">
+            <h2 class="visually-hidden">Contact Header Section</h2>
             <div class="container">
-                <p class="lead">Macon County offers a wide range of services designed to support residents, business, and visitors throughout the community. Whether you're looking for assistance with public records, recreational programs, business resources, or local community centers, our goal is to make essential services easy to access and understand. Browse the services areas below to discover how we can assist you!</p>
+                <p class="lead">From sweeping mountain views to hidden waterfalls and winding trails, Macon County offers unforgettable outdoor experiences at every turn. Visitors can enjoy serene parks, breathtaking scenic overlooks, and miles of well-loved hiking routes that folks have been following for generations.</p> 
+
+                <p class="lead">Beyond the trails, our mountain towns - including Franklin, Highlands, Otto, and the Nantahala community - offer a vibrant mix of local businesses to explore. From charming boutiques and artisan shops to cozy cafes, wellness centers, and restaurants featuring regional flavors, each stop adds its own character to your visit. Complement your outdoor adventures with a stroll through these welcoming communities and experience the full beauty, flavor, and hospitality of Macon County.</p>
             </div>
         </section>
         
-        <!-- Services' Image Showcases-->
-        <section class="services-showcase">
-            <div class="container-fluid p-0">
-
-                <!-- Services Overview -->
-                <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2 showcase-img" style="background-image: url('assets/img/services-showcase-1.jpg')"></div>
-                    <div class="col-lg-6 order-lg-1 my-auto showcase-text services-box">
-                        <h2>County Services</h2>
-                        <p class="lead mb-0">Explore the many county services available to residents and business owners. Whether you need help with utility billing or support for your small business, we provide a variety of resources to meet your needs.</p>
-                    </div>
-                </div>
-
-                <!-- Public Records -->
-                <div class="row g-0">
-                    <div class="col-lg-6 showcase-img" style="background-image: url('assets/img/services-showcase-2.jpg')"></div>
-                    <div class="col-lg-6 my-auto showcase-text services-box">
-                        <h2>Public Records & Archives</h2>
-                        <p class="lead mb-0">Access deeds, permits, vital records, tax information, historical county news, and other official county documents quickly and securely through our public records and archives system.</p>
-                    </div>
-                </div>
-
-                <!-- Recreation & Community Overview -->
-                <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2 showcase-img" style="background-image: url('assets/img/services-showcase-3.jpg')"></div>
-                    <div class="col-lg-6 order-lg-1 my-auto showcase-text services-box">
-                        <h2>Recreational & Community Activites</h2>
-                        <p class="lead mb-0">Discover parks, trails, community centers, youth programs, and seasonal events that help bring neighbors together and promote healthy, active living.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Subpage Navigation -->
-         <section class="about-subnav py-5 text-center">
+        <!-- Photo Display for Sightseeing -->
+         <section class="scenic-panels py-5">
             <div class="container">
-                <h2 class="about-subnav-title mb-4">County Services Areas</h2>
+                <div class="row g-4">
 
-                <div class="d-flex flex-wrap justify-content-center gap-3">
-                    <a href="subpage/resident-services.html" class="about-subnav-btn">Resident Services</a>
-                    <a href="subpage/business-services.html" class="about-subnav-btn">Business Services</a>
-                    <a href="subpage/public-records.html" class="about-subnav-btn">Public Records</a>
-                    <a href="subpage/recreational-programs.html" class="about-subnav-btn">Recreational Programs</a>
-                    <a href="subpage/community-centers.html" class="about-subnav-btn">Community Centers</a>
+                    <!-- Panel 1 -->
+                     <div class="col-lg-4">
+                        <div class="scenic-panel">
+                            <img src="assets/img/hiking-view.jpg" alt="Scenic mountain overlook view in Macon County" class="scenic-img">
+                            <div class="scenic-overlay">
+                                <h3>Mountain Overlooks</h3>
+                                <p>Experience wide-open views across the Blue Ridge Mountains.</p>
+                            </div>
+                        </div>
+                     </div>
+
+                     <!-- Panel 2 -->
+                     <div class="col-lg-4">
+                        <div class="scenic-panel">
+                            <img src="assets/img/hiking-family.jpg" alt="Mother and child hiking together on a forest trail in Macon County" class="scenic-img">
+                            <div class="scenic-overlay">
+                                <h3>Family-Friendly Trails</h3>
+                                <p>Explore walking paths suitable for all ages and skill levels and through tranquil woodlands.</p>
+                            </div>
+                        </div>
+                     </div>
+
+                     <!-- Panel 3 -->
+                     <div class="col-lg-4">
+                        <div class="scenic-panel">
+                            <img src="assets/img/hiking-man-dog.jpg" alt="Scenic mountain overlook view in Macon County" class="scenic-img">
+                            <div class="scenic-overlay">
+                                <h3>Outdoor Adventures</h3>
+                                <p>Enjoy camping, fishing, and scenic riverside spots. Fur friends are welcome on most trails!</p>
+                            </div>
+                        </div>
+                     </div>
+
                 </div>
             </div>
          </section>
+        
+        <!-- Sightseeing Subpage Navigation -->
+         <section class="about-subnav py-5 text-center">
+            <div class="container">
+                <h2 class="about-subnav-title mb-4">Where to Adventure within Macon County</h2>
+
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="subpage/visitor-resources.html" class="about-subnav-btn">Visitor Resources</a>
+                    <a href="subpage/parks.html" class="about-subnav-btn">Parks & Scenic Areas</a>
+                    <a href="subpage/trails.html" class="about-subnav-btn">Popular Trails</a>
+                    <a href="subpage/landmark.html" class="about-subnav-btn">County Landmarks</a>
+                    <a href="subpage/business-directory.html" class="about-subnav-btn">Local Business Directory</a>
+                </div>
+            </div>
+         </section>
+
         <!-- Footer-->
         <footer class="footer">
             <div class="container">
@@ -273,7 +292,6 @@
                                     <li><a href="subpage/festivals.html">Festivals & Celebrations</a></li>
                                     <li><a href="subpage/markets.html">Farmers Markets</a></li>
                                     <li><a href="subpage/library.html">Library Programs</a></li>
-                                    <li><a href="subpage/business-directory.html">Local Business Directory</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -309,6 +327,7 @@
                     </div>
                 </div>
             </div>
+            </div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -318,7 +337,6 @@
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        </script>
     </body>
 </html>
 

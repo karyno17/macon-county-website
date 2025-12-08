@@ -11379,6 +11379,10 @@ footer.footer {
 }
 
 /* ==== CONTACT US PAGE ==== */
+.contact-page {
+  background-color: #f8F9FA;
+}
+
 .contact-banner {
   background-image: url("../assets/img/countycontactrep.jpg");
   background-size: cover;
@@ -11397,6 +11401,14 @@ footer.footer {
   font-weight: 700;
   font-size: 2rem !important;
   margin: 0;
+}
+
+.contact-hero-frame {
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 8px solid #D1A73B;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.15);
 }
 
 /* Contact Page Header */
@@ -11539,6 +11551,10 @@ footer.footer {
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
+.county-map {
+  width: 100%;
+}
+
 /* ==== ABOUT THE COUNTY PAGE ==== */
 /* Background Color */
 .about-page {
@@ -11556,7 +11572,7 @@ footer.footer {
   max-width: 1400px;
   margin: 0 auto;
   overflow: hidden;
-  border: 8px solid #D1A73B;
+  border: 8px solid #E6E0D3;
   box-shadow: 0 4px 18px rgba(0,0,0,0.15);
 }
 
@@ -11567,7 +11583,8 @@ footer.footer {
 }
 
 .about-header-bar {
-  background-color: #D1A73B;
+  background-color: #E6E0D3;
+  color: #1A2A4F;
 }
 
 .about-banner {
@@ -11589,11 +11606,12 @@ footer.footer {
 .about-header-text, .contact-header-text {
   background-color: transparent;
 }
+
 /* Testimonials Section */
 .about-testimonials {
   background-color: #DDE3EF;
   padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 
 .about-testimonial-title {
@@ -11622,16 +11640,18 @@ footer.footer {
   font-family: "Inria Serif", serif;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  font-size: 1.5rem;
 }
 
 .about-testimonials p {
   font-family: "League Spartan", sans-serif;
-  font-size: 0.95rem;
+  font-size: 1.15rem;
   color: #1A2A4F;
+  font-weight: 400;
   max-width: 320px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1.25rem;
+  margin-top: 1rem;
 }
 
 /* About Page Subnav Buttons */
@@ -11643,6 +11663,9 @@ footer.footer {
   color: #DCE7D6;
   font-family: "League Spartan", sans-serif;
   font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-style: italic;
 }
 
 .about-subnav-btn {
@@ -11652,11 +11675,15 @@ footer.footer {
   font-family: "League Spartan", sans-serif;
   font-weight: 700;
   letter-spacing: 0.5px;
-  padding: 0.75rem 1.5rem;
+  padding-top: 1.1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   border-radius: 8px;
   text-decoration: none;
   border: 2px solid #ffffff;
   transition: all 0.25s ease;
+  margin: 0 0.75rem;
 }
 
 .about-subnav-btn:hover {
@@ -11675,7 +11702,7 @@ footer.footer {
   margin: 0 auto;
   overflow: hidden;
   box-shadow: 0 4px 18px rgba(0,0,0,0.15);
-  border: 8px solid #A8B6CF;
+  border: 8px solid #2E584D;
 }
 
 .services-banner {
@@ -11710,6 +11737,10 @@ footer.footer {
 }
 
 /* Showcase Area */
+.showcase-img {
+  min-height: 360px;
+}
+
 .services-showcase .services-box {
   background-color: #A8B6CF;
   color: #1A2A4F !important;
@@ -11735,11 +11766,294 @@ footer.footer {
   line-height: 1.6;
 }
 
-.services-showcas .showcase-img {
+.services-showcase .showcase-img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   min-height: 360px;
+}
+
+/* ==== SIGHTSEEING PAGE ==== */
+.sightseeing-hero-frame {
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+  border: 8px solid #1A2A4F;
+}
+
+.sightseeing-banner {
+  background-image: url("../assets/img/waterfall.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 360px;
+}
+
+/* Header Bar */
+.sightseeing-header-bar {
+  background-color: #1A2A4F;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.sightseeing-header-bar h1 {
+  color: #DCE7D6;
+  font-weight: 700;
+  font-size: 2rem !important;
+  margin: 0;
+}
+
+.scenic-panel {
+  background-color: #F8F9FA;
+  position: relative;
+  height: 420px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+
+.scenic-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.scenic-panel {
+  height: 420px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.scenic-panels {
+  margin-bottom: 3rem;
+}
+.scenic-panel:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.22);
+}
+
+.scenic-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1.25rem;
+  background: rgba(26,42,79,0.75);
+  color: #ffffff;
+}
+
+.scenic-overlay h3 {
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+  font-size: 1.35rem;
+  margin-bottom: 0.25rem;
+}
+
+.scenic-overlay p {
+  font-family: "League Spartan", sans-serif;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* ==== SAFETY PAGE ==== */
+.safety-hero-frame {
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+  border: 8px solid #D1A73B;
+}
+
+.safety-banner {
+  background-image: url("../assets/img/multiple-ambulances.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 360px;
+}
+
+.safety-header-bar {
+  background-color: #D1A73B;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.safety-header-bar h1 {
+  color: #1A2A4F;
+  font-weight: 700;
+  font-size: 2rem !important;
+  margin: 0;
+}
+
+.safety-pillars {
+  background-color: #F8F9FA;
+}
+
+.safety-pillars-title {
+  font-family: "Inria Serif", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1A2A4F;
+}
+
+.safety-card {
+  background-color: #F8F9FA;
+  border-radius: 12px;
+  padding: 2.5rem 1.75rem;
+  text-align: center;
+  border: 2px solid #DDE3EF;
+  transition: transform .25s ease, box-shadow .25s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.safety-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.safety-icon {
+  font-size: 6rem;
+  color: #1A2A4F;
+  margin-bottom: 1rem;
+}
+
+.safety-card h3 {
+  font-family: "Inria Serif", serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1A2A4F;
+  margin-bottom: 0.75rem;
+}
+
+.safety-card p {
+  font-family: "League Spartan", sans-serif;
+  line-height: 1.55;
+  color: #1A2A4F;
+  font-size: 1rem;
+}
+
+.safety-card-col {
+  display: flex;
+}
+
+/* ==== EVENTS PAGE ==== */
+.events-hero-frame {
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+  border: 8px solid #A8B6CF;
+}
+
+.events-banner {
+  background-image: url("../assets/img/group-smiling-outdoors.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 360px;
+}
+
+.events-header-bar {
+  background-color: #A8B6CF;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.events-header-bar h1 {
+  color: #1A2A4F;
+  font-weight: 700;
+  font-size: 2rem !important;
+  margin: 0;
+}
+
+.events-highlight {
+  background-color: #DCE7D6;
+}
+
+.events-highlight .container {
+  padding-top: 0;
+}
+
+.events-highlight-title {
+  color: #1A2A4F;
+  font-family: "Inria Serif", serif;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.events-highlight-intro {
+  max-width: 780px;
+  margin: 0 auto;
+  color: #1A2A4F;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.events-photo-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.event-photo-img {
+  width: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  display: block;
+}
+
+.event-detail {
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 1.75rem 1.75rem 1.5rem 1.75rem;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.event-detail h3 {
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+  font-size: 1.45rem;
+  color: #1A2A4F;
+  margin-bottom: 0.75rem;
+}
+
+.event-detail p {
+  margin: 0;
+  color: #1A2A4F;
+  line-height: 1.7;
+  font-weight: 400;
+  font-size: 1.15rem;
+}
+
+/* ==== UTILITIES ==== */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rectr(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
 }
 
 
@@ -11892,6 +12206,14 @@ footer.footer {
     margin-top: -2px;
   }
 
+  .events-highlight-title {
+    font-size: 1.75rem;
+  }
+
+  .event-detail {
+    padding: 1.25rem 1.25rem 1.1rem 1.25rem;
+  }
+  
   .footer-links > li {
     margin-bottom: 1.25rem !important;
   }
